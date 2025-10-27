@@ -23,7 +23,6 @@ use Carbon\Carbon;
 class AdminController extends Controller
 {
     //========== Supplier information ============//
-
     public function supplierList()
     {
         $suppliers = Supplier::orderBy('created_at', 'desc')->paginate(10);
